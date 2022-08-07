@@ -2,23 +2,22 @@
 
 Repository contains necessary helm charts that deployed in kansas city VMs.
 
-#### Usages
+### Usages
 
 [Helm](https://helm.sh) must be installed to use the charts.  Please refer to
 Helm's [documentation](https://helm.sh/docs) to get started.
 
 Once Helm has been set up correctly, add the repo as follows:
+```shell
+# Installation
+helm repo add bhtk https://bhautikchudasama.github.io/charts
 
-  helm repo add <alias> https://bhautikchudasama.github.io/charts
+# Searching 
+helm search repo bhtk
 
-If you had already added this repo earlier, run `helm repo update` to retrieve
-the latest versions of the packages.  You can then run `helm search repo
-<alias>` to see the charts.
+# Installation of chart
+helm install bhtk-<chart-name> bhtk/<charts>
 
-To install the <chart-name> chart:
-
-    helm install my-<chart-name> <alias>/<chart-name>
-
-To uninstall the chart:
-
-    helm delete my-<chart-name>
+# Delete
+helm delete bhtk-<chart-name>
+```
