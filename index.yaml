@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  postgrescluster:
+  - apiVersion: v2
+    appVersion: 5.1.2
+    created: "2022-08-07T03:55:27.847485702Z"
+    description: A Helm chart for Kubernetes
+    digest: 791c6c419c882727ebe1dc1d2f959249894cff91d4e9bbfd6517f87c9bdf9be6
+    name: postgrescluster
+    type: application
+    urls:
+    - https://github.com/BhautikChudasama/charts/releases/download/postgrescluster-0.2.5/postgrescluster-0.2.5.tgz
+    version: 0.2.5
+generated: "2022-08-07T03:55:27.615603825Z"
